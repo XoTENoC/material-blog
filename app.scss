@@ -1,0 +1,194 @@
+@import "@material/button/mdc-button";
+@import "@material/button";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+@import "@material/image-list/mdc-image-list";
+@import "@material/typography/mdc-typography";
+@import "@material/card/mdc-card";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color(black);
+  .mdc-top-app-bar__section {
+      img {
+        height: 70%;
+        margin-left: 5%;
+      }
+  }
+}
+
+.mdc-tab-bar {
+  @include mdc-tab-bar-width(auto);
+}
+
+.mdc-tab {
+  @include mdc-tab-text-label-color(grey);
+  @include mdc-tab-icon-color(grey);
+  &:hover {
+    @include mdc-tab-text-label-color(white);
+    @include mdc-tab-icon-color(white);
+  }
+}
+
+.mdc-tab--active {
+  @include mdc-tab-active-text-label-color(white);
+  @include mdc-tab-icon-color(white);
+  @include mdc-tab-indicator-underline-color(white);
+}
+
+.ntc-jumbo {
+  padding-top: 50px;
+  height: 50vh;
+  background-image: url("./img/cover-photo-frount-page.jpg");
+  background-size: cover;
+  background-position: center;
+  .ntc-jumbo-hero--container {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    .ntc-jumbo-title {
+      margin-top: 10vh;
+      color: #ffffff;
+    }
+    .ntc-jumbo-paragraph {
+      margin-top: 20px;
+      color: grey;
+    }
+    .ntc-jumbo-nav {
+      margin-top: 15px;
+      .mdc-button {
+        @include mdc-button-ink-color(white);
+        @include mdc-button-outline-color(grey);
+      }
+    }
+  }
+}
+
+.ntc-blog {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  @include mdc-image-list-standard-columns(3, 20px);
+  .ntc-blog-header {
+    .ntc-blog-title {
+    }
+    .ntc-blog-description {
+      margin-top: 2vh;
+      width: 70%;
+    }
+  }
+  .mdc-image-list {
+    margin-top: 5vh;
+    .mdc-card {
+      .ntc-card__media {
+        padding: 25px;
+      }
+      .mdc-card__primary {
+        padding: 25px;
+      }
+    }
+  }
+}
+
+.ntc-gram {
+  margin-top: 20vh;
+  .ntc-gram-hero {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    .ntc-gram-header {
+      .ntc-gram-sub {
+        padding-top: 2vh;
+      }
+    }
+    .ntc-gram-display {
+      .gallery {
+        padding-top: 50px;
+        margin-left: auto;
+        width: 90%;
+        margin-right: auto;
+        h2 {
+          font-family: "Alata", sans-serif;
+          margin-bottom: 2%;
+          font-size: 3em;
+        }
+        .instagram_profile {
+          display: none;
+        }
+        .instagram_gallery {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          a {
+            width: 30%;
+            img {
+              margin: 10px;
+              width: 100%;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-footer {
+  margin-top: 15vh;
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+// blog homepage
+
+.ntc-jumbo-blog-intro {
+  padding-top: 50px;
+  height: 55vh;
+  background-color: #1aa260;
+  .ntc-jumbo-hero--container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    .ntc-jumbo-title {
+      margin-top: 20vh;
+      color: #ffffff;
+    }
+    .ntc-jumbo-paragraph {
+      margin-top: 5px;
+      color: #dbd9d9;
+    }
+  }
+}
+
+.ntc-blog-links{
+  margin-top: 5vh;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  .ntc-blog-feature{
+    height: 35vh;
+    .ntc-feature-img{
+      background-image: url(./img/placeholders/blog/feature.png);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+  }
+}
