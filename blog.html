@@ -4,8 +4,8 @@
 <head>
     <link rel="stylesheet" href="./bundle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>STEEZUS's blog</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <title></title>
 </head>
 
 <body>
@@ -13,28 +13,39 @@
     <header class=" mdc-top-app-bar mdc-top-app-bar--dense navbar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                <img src="./img/SVG/steezus_logo.svg" alt="STEEZUS logo">
+                <img src="./img/SVG/steezus_logo.svg" alt="STEEZUS logo" id="Home">
             </section>
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
                 <div class="mdc-tab-bar" role="tablist">
                     <div class="mdc-tab-scroller">
                         <div class="mdc-tab-scroller__scroll-area">
                             <div class="mdc-tab-scroller__scroll-content">
-                                <button class="mdc-tab mdc-tab--min-width" role="tab" aria-selected="true" tabindex="0">
+                                <button onclick="window.location.href = './gallery.html';" class="mdc-tab mdc-tab--min-width" role="tab" aria-selected="true" tabindex="0">
                                     <span class="mdc-tab__content">
-                                        <span class="mdc-tab__text-label">GALLERY</span>
+                                        <span class="mdc-tab__text-label"><strong>GALLERY</strong></span>
                                     </span>
-                                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                    <!-- <span class="mdc-tab-indicator mdc-tab-indicator--active">
                                         <spanclass="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-                                    </span>
+                                    </span> -->
                                     <span class="mdc-tab__ripple"></span>
                                 </button>
-                                <button class="mdc-tab mdc-tab--active mdc-tab--min-width" onclick="window.location.href = './blog.html';" role="tab" aria-selected="true" tabindex="0">
+                                <button class="mdc-tab mdc-tab--active mdc-tab--min-width"
+                                    onclick="window.location.href = './blog.html';" role="tab" aria-selected="true"
+                                    tabindex="0">
                                     <span class="mdc-tab__content">
                                         <span class="mdc-tab__text-label"><strong>BLOG</strong></span>
                                     </span>
                                     <span class="mdc-tab-indicator mdc-tab-indicator--active">
-                                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                        <span
+                                            class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--min-width"
+                                    onclick="window.location.href = './blog.html';" role="tab" aria-selected="true"
+                                    tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label"><strong>SERVICES</strong></span>
                                     </span>
                                     <span class="mdc-tab__ripple"></span>
                                 </button>
@@ -52,7 +63,6 @@
             </section>
         </div>
     </header>
-
     <main>
         <section class="ntc-jumbo-blog-intro">
             <div class="ntc-jumbo-hero--container">
@@ -66,15 +76,246 @@
         <!---->
         <!---->
         <section class="ntc-blog-links">
-            <div class="ntc-blog-feature row">
-                <div class="col s7 ntc-feature-img"></div>
-                <div class="col s5 ntc-feature-text">
-                    <h3 class="mdc-typography--headline4"><strong>Nec Sagittis</strong></h3>
-                    <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <section>
+                <a href="#">
+                    <div class="ntc-blog-feature row">
+                        <div class="col s7 ntc-feature-img"></div>
+                        <div class="col s5 ntc-feature-text">
+                            <h3 class="mdc-typography--headline4"><strong>Nec Sagittis</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Tempus Urna</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <section class="ntc-services-link">
+                <div class="ntc-gallery-link-wide--paragraph">
+                    <p class="mdc-typography--headline5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button class="mdc-button mdc-button--outlined">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">THE GALLERY</span>
+                    </button>
                 </div>
-            </div>
+            </section>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <section class="ntc-blog-dual">
+                <div class="row">
+                    <a href="#">
+                        <div class="col s6 ntc-blog-dual-article">
+                            <div class="ntc-blog-dual-img">
+                                <img src="./img/placeholders/blog/blog1.png" alt="blog image">
+                            </div>
+                            <h3 class="mdc-typography--headline4"><strong>Vulputate Enim</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Massa Ultricies</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col s6 ntc-blog-dual-article">
+                            <div class="ntc-blog-dual-img">
+                                <img src="./img/placeholders/blog/blog2.png" alt="blog image">
+                            </div>
+                            <h3 class="mdc-typography--headline4"><strong>Elit Ullamcorper</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Diam Ut</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <section>
+                <a href="#">
+                    <div class="ntc-blog-normal row">
+                        <div class="col s5 ntc-normal-img">
+                            <img src="./img/placeholders/blog/blog3.png" alt="">
+                        </div>
+                        <div class="col s7 ntc-normal-text">
+                            <h3 class="mdc-typography--headline4"><strong>Aliquam Ut</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Integer Quis</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="ntc-blog-normal row">
+                        <div class="col s5 ntc-normal-img">
+                            <img src="./img/placeholders/blog/blog4.png" alt="">
+                        </div>
+                        <div class="col s7 ntc-normal-text">
+                            <h3 class="mdc-typography--headline4"><strong>Morbi Tristique</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Bibendum Est</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="ntc-blog-normal row">
+                        <div class="col s5 ntc-normal-img">
+                            <img src="./img/placeholders/blog/blog5.png" alt="">
+                        </div>
+                        <div class="col s7 ntc-normal-text">
+                            <h3 class="mdc-typography--headline4"><strong>Nibh Venenatis</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Ipsum Consequat</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <section class="ntc-galery-link-wide">
+                <div class="ntc-gallery-link-wide--paragraph">
+                    <p class="mdc-typography--headline5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button class="mdc-button mdc-button--outlined">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">THE GALLERY</span>
+                    </button>
+                </div>
+            </section>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <section class="ntc-blog-dual">
+                <div class="row">
+                    <a href="#">
+                        <div class="col s6 ntc-blog-dual-article">
+                            <div class="ntc-blog-dual-img">
+                                <img src="./img/placeholders/blog/blog1.png" alt="blog image">
+                            </div>
+                            <h3 class="mdc-typography--headline4"><strong>Consectetur Adipiscing</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Vitae Suscipit</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col s6 ntc-blog-dual-article">
+                            <div class="ntc-blog-dual-img">
+                                <img src="./img/placeholders/blog/blog2.png" alt="blog image">
+                            </div>
+                            <h3 class="mdc-typography--headline4"><strong>Amet Nisl</strong></h3>
+                            <p class="mdc-typography--subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="ntc-blog-creator">
+                                <div class="ntc-creator-img"></div>
+                                <div class="ntc-creator-info">
+                                    <h6 class="ntc-creator-info__name mdc-typography--subtitle1">Lacinia Quis</h6>
+                                    <p class="ntc-creator-info__date mdc-typography--subtitle2">Mar 25 | 3 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
         </section>
     </main>
+
+    <footer class="page-footer teal">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Northcott Socials
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="bundle.js" async></script>
 
 </body>
 

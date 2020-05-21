@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./bundle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>STEEZUS</title>
+    <title>Northcott Socials</title>
 </head>
 
 <body>
@@ -13,14 +13,15 @@
     <header class=" mdc-top-app-bar mdc-top-app-bar--dense navbar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                <img src="./img/SVG/steezus_logo.svg" alt="STEEZUS logo">
+                <img src="./img/SVG/steezus_logo.svg" alt="STEEZUS logo" id="Home">
             </section>
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
                 <div class="mdc-tab-bar" role="tablist">
                     <div class="mdc-tab-scroller">
                         <div class="mdc-tab-scroller__scroll-area">
                             <div class="mdc-tab-scroller__scroll-content">
-                                <button class="mdc-tab mdc-tab--min-width" role="tab"
+                                <button class="mdc-tab mdc-tab--min-width" role="tab" onclick=" window.location.href='./gallery.html'
+                                ;"
                                     aria-selected="true" tabindex="0">
                                     <span class="mdc-tab__content">
                                         <span class="mdc-tab__text-label"><strong>GALLERY</strong></span>
@@ -33,6 +34,14 @@
                                 <button class="mdc-tab mdc-tab--min-width" onclick="window.location.href = './blog.html';" role="tab" aria-selected="true" tabindex="0">
                                     <span class="mdc-tab__content">
                                         <span class="mdc-tab__text-label">BLOG</span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--min-width"
+                                    onclick="window.location.href = './blog.html';" role="tab" aria-selected="true"
+                                    tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label"><strong>SERVICES</strong></span>
                                     </span>
                                     <span class="mdc-tab__ripple"></span>
                                 </button>
@@ -63,9 +72,23 @@
                     </button>
                     <button class="mdc-button mdc-button--outlined">
                         <div class="mdc-button__ripple"></div>
-                        <span class="mdc-button__label">THE LATEST VID</span>
+                        <span class="mdc-button__label">CONTACT</span>
                     </button>
                 </div>
+            </div>
+        </section>
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <section class="ntc-service-link">
+            <div class="ntc-gallery-link-wide--paragraph">
+                <p class="mdc-typography--headline5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="mdc-button mdc-button--outlined">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">THE GALLERY</span>
+                </button>
             </div>
         </section>
         <!---->
@@ -142,7 +165,7 @@
             <div class="ntc-gram-hero">
                 <div class="ntc-gram-header">
                     <h2 class="ntc-gram-title mdc-typography--headline3">The Lastest</h2>
-                    <p class="ntc-gram-sub mdc-typography--subtitle1">Follow me on instagram and YouTube</p>
+                    <p class="ntc-gram-sub mdc-typography--subtitle1">Follow me on instagram</p>
                 </div>
                 <div class="ntc-gram-display">
                     <div class="gallery wrapper" id="gallery">
@@ -154,18 +177,28 @@
               
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer teal">
         <div class="container">
           <div class="row">
-            <div class="">
-              <h5 class="mdc-typography--headline4">Andre Lauthier</h5>
-              <p class="mdc-typography--subtitle2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque adipiscing commodo elit at imperdiet. Morbi enim nunc faucibus a pellentesque sit amet porttitor. Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Eget mauris pharetra et ultrices neque ornare aenean. Feugiat nisl pretium fusce id velit ut. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Tellus elementum sagittis vitae et leo duis ut diam. Ornare lectus sit amet est. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Malesuada proin libero nunc consequat interdum varius sit.</p>
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="footer-copyright">
-          <div class="container centre">
-          © 2020 Copyright Andre Lauthier
+          <div class="container">
+          © 2020 Northcott Socials
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
           </div>
         </div>
       </footer>
@@ -175,7 +208,7 @@
     <script>
         (function () {
             new InstagramFeed({
-                'username': 'andrelauthierr',
+                'username': 'mylittlenorthcott',
                 'container': document.getElementById("instagram-feed"),
                 'display_gallery': true,
                 'styling': false,

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./bundle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+
+<body>
+
+    <header class=" mdc-top-app-bar mdc-top-app-bar--dense navbar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <img src="./img/SVG/steezus_logo.svg" alt="STEEZUS logo" id="Home">
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <div class="mdc-tab-bar" role="tablist">
+                    <div class="mdc-tab-scroller">
+                        <div class="mdc-tab-scroller__scroll-area">
+                            <div class="mdc-tab-scroller__scroll-content">
+                                <button class="mdc-tab mdc-tab--active onclick=" window.location.href='./gallery.html'
+                                    ;" mdc-tab--min-width" role="tab" aria-selected="true" tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label"><strong>GALLERY</strong></span>
+                                    </span>
+                                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                        <span
+                                            class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--min-width"
+                                    onclick="window.location.href = './blog.html';" role="tab" aria-selected="true"
+                                    tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label"><strong>BLOG</strong></span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--min-width"
+                                    onclick="window.location.href = './blog.html';" role="tab" aria-selected="true"
+                                    tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label"><strong>SERVICES</strong></span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                                <button class="mdc-tab mdc-tab--min-width mdc-tab__section--align-end" role="tab"
+                                    aria-selected="true" tabindex="0">
+                                    <span class="mdc-tab__content">
+                                        <span class="mdc-tab__text-label">ABOUT</span>
+                                    </span>
+                                    <span class="mdc-tab__ripple"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="ntc-jumbo-gallery-intro">
+            <div class="ntc-jumbo-hero--container">
+                <h1 class="ntc-jumbo-title mdc-typography--headline1">Gallery . . .</h1>
+                <p class="ntc-jumbo-paragraph mdc-typography--headline5">A room or building for the display or sale of
+                    works of art.</p>
+            </div>
+        </section>
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <section class="ntc-gallery-switcher">
+            <div class="mdc-tab-bar" role="tablist">
+                <div class="mdc-tab-scroller">
+                    <div class="mdc-tab-scroller__scroll-area">
+                        <div class="mdc-tab-scroller__scroll-content">
+                            <button class="mdc-tab mdc-tab--min-width" role="tab" aria-selected="true" tabindex="0" id="all-button">
+                                <span class="mdc-tab__content">
+                                    <span class="mdc-tab__text-label"><strong>ALL</strong></span>
+                                </span>
+                                <span class="mdc-tab-indicator mdc-tab-indicator--active" id="all-line">
+                                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                  </span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                            <button class="mdc-tab mdc-tab--min-width" role="tab" aria-selected="true" tabindex="0" id="people-button">
+                                <span class="mdc-tab__content">
+                                    <span class="mdc-tab__text-label"><strong>PEOPLE</strong></span>
+                                </span>
+                                <span class="mdc-tab-indicator" id="people-line">
+                                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                  </span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                            <button class="mdc-tab mdc-tab--min-width mdc-tab__section--align-end" role="tab"
+                                aria-selected="true" tabindex="0" id="product-button">
+                                <span class="mdc-tab__content">
+                                    <span class="mdc-tab__text-label"><strong>PRODUCT</strong></span>
+                                </span>
+                                <span class="mdc-tab-indicator" id="product-line">
+                                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                  </span>
+                                <span class="mdc-tab__ripple"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <!---->
+        <!---->
+        <section class="ntc-gallery ntc-gallery-all" id="allImg">
+            <ul class="mdc-image-list mdc-image-list--masonry ntc-gallery-masonry">
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image1.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image2.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image3.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image4.jpg">
+                </li>
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image5.jpg">
+                </li>
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image6.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image7.jpg">
+                </li>
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image8.jpg">
+                </li>
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image9.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image10.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image11.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image12.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image13.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image14.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image15.jpg">
+                </li>
+                
+            </ul>
+        </section>
+        <!---->
+        <!---->
+        <!---->
+        <section class="ntc-gallery ntc-gallery-none" id="product">
+            <ul class="mdc-image-list mdc-image-list--masonry ntc-gallery-masonry">
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image1.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image2.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image3.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image4.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image7.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image10.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image11.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image12.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image13.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image14.jpg">
+                </li>
+                <li class="mdc-image-list__item " >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image15.jpg">
+                </li>
+            </ul>
+        </section>
+        <!---->
+        <!---->
+        <!---->
+        <section class="ntc-gallery ntc-gallery-none" id="people">
+            <ul class="mdc-image-list mdc-image-list--masonry ntc-gallery-masonry">
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image5.jpg">
+                </li>
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image6.jpg">
+                </li>
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image8.jpg">
+                </li>
+                <li class="mdc-image-list__item ntc-gallery-people" >
+                    <img class="mdc-image-list__image" src="./img/gallery/all/image9.jpg">
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="page-footer teal">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Northcott Socials
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="bundle.js" async></script>
+
+</body>
+
+</html>

@@ -20,10 +20,11 @@
 .mdc-top-app-bar {
   @include mdc-top-app-bar-fill-color(black);
   .mdc-top-app-bar__section {
-      img {
-        height: 70%;
-        margin-left: 5%;
-      }
+    img {
+      height: 70%;
+      margin-left: 5%;
+      cursor: pointer;
+    }
   }
 }
 
@@ -49,7 +50,7 @@
 .ntc-jumbo {
   padding-top: 50px;
   height: 50vh;
-  background-image: url("./img/cover-photo-frount-page.jpg");
+  background-color: #272727;
   background-size: cover;
   background-position: center;
   .ntc-jumbo-hero--container {
@@ -151,8 +152,10 @@
 
 .page-footer {
   margin-top: 15vh;
+  .ntc-footer-width {
+    width: 60%;
+  }
   .footer-copyright {
-    text-align: center;
   }
 }
 
@@ -177,18 +180,184 @@
   }
 }
 
-.ntc-blog-links{
+.ntc-service-link{
+  background-image: url('./img/placeholders/services\ cover.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 30px;
+  margin-top: 20vh;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  p {
+    color: #ffffff;
+  }
+  .mdc-button {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    @include mdc-button-ink-color(white);
+    @include mdc-button-outline-color(white);
+  }
+}
+
+.ntc-blog-links {
   margin-top: 5vh;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  .ntc-blog-feature{
+  color: #000000;
+  .ntc-blog-feature {
     height: 35vh;
-    .ntc-feature-img{
+    padding: 10px;
+    transition: ease 0.2s;
+    border: #ffffff solid 1px;
+    .ntc-feature-img {
       background-image: url(./img/placeholders/blog/feature.png);
       background-size: cover;
       background-position: center;
       height: 100%;
     }
+    &:hover {
+      border: #cecece solid 1px;
+    }
   }
+  .ntc-feature-text {
+    color: #000000;
+  }
+  .ntc-blog-creator {
+    margin-top: 15px;
+    .ntc-creator-img {
+      height: 50px;
+      width: 50px;
+      background-image: url(./img/placeholders/blog/profile.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 50px;
+      float: left;
+    }
+    .ntc-creator-info {
+      float: left;
+      margin-left: 10px;
+      .ntc-creator-info__name {
+        margin: 0px;
+      }
+    }
+  }
+  .ntc-galery-link-wide {
+    background-color: #1aa260;
+    padding: 50px 30px;
+    margin-top: 50px;
+    .ntc-gallery-link-wide--paragraph {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      p {
+        color: #ffffff;
+      }
+      .mdc-button {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        @include mdc-button-ink-color(white);
+        @include mdc-button-outline-color(white);
+      }
+    }
+  }
+  .ntc-blog-dual {
+    margin-top: 50px;
+    .ntc-blog-dual-article {
+      padding: 19px;
+      border: #ffffff solid 1px;
+      transition: ease 0.2s;
+      color: #000000;
+      .ntc-blog-dual-img {
+        img {
+          width: 100%;
+          height: 40%;
+          position: relative;
+        }
+      }
+      &:hover {
+        border: #cecece solid 1px;
+      }
+    }
+  }
+  .ntc-blog-normal {
+    height: 25vh;
+    padding: 10px;
+    transition: ease 0.2s;
+    border: #ffffff solid 1px;
+    color: #000000;
+    .ntc-normal-img {
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+    &:hover {
+      border: #cecece solid 1px;
+    }
+  }
+}
+
+// Gallery 
+
+.ntc-jumbo-gallery-intro {
+  padding-top: 50px;
+  height: 55vh;
+  background-color: #03a9f4;
+  .ntc-jumbo-hero--container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    .ntc-jumbo-title {
+      margin-top: 20vh;
+      color: #ffffff;
+    }
+    .ntc-jumbo-paragraph {
+      margin-top: 5px;
+      color: #dbd9d9;
+    }
+  }
+}
+
+.ntc-gallery-switcher{
+  .mdc-tab-bar{
+    .mdc-tab-scroller{
+      .mdc-tab-scroller__scroll-content{
+        justify-content: center;
+        .mdc-tab{
+          .mdc-tab-indicator{
+            @include mdc-tab-indicator-underline-color(grey);
+          }
+          &:hover{
+            @include mdc-tab-text-label-color(grey);
+          }
+        }
+      }
+    }
+  }
+}
+
+.ntc-gallery{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  @include mdc-image-list-masonry-columns(3,20px);
+  .mdc-image-list__item{
+      img{
+          width: 100%;
+      }
+  }
+}
+
+.ntc-gallery-none{
+  display: none;
+  transition: 0.2s;
 }
