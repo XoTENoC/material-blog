@@ -40,6 +40,12 @@ Here are the rest of the dependancies including the two above all these can be f
 
 ## Usage
 
+to start the webserver type:
+
+```bash
+npm Start
+```
+
 At the moment the the template isn't fully completed yet, as it is not fully commemted out yet and to create blog posts you have to manulay add them but other that that everything can be edited in the HTML and SCSS.
 
 ## Plans
